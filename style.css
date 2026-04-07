@@ -1,0 +1,153 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #444444;
+    --link-color: #0969da;
+    --note-bg: #e0e6ec;
+    
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #222222;
+        --text-color: #fffcf3;
+        --link-color: #58a6ff;
+        --note-bg: #333333;
+
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font: 18px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+
+h1, h2, h3 {
+    line-height: 1.2;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+}
+
+nav {
+    text-align: center;
+    padding: 1rem;
+    background: transparent;
+}
+
+.intro-flex {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.callout.note {
+    background: var(--note-bg);
+    margin: 2rem 0;
+    border-left: 8px solid var(--link-color);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+}
+
+.callout.note strong {
+    color: var(--text-color);
+    font-style: italic;
+}
+
+.callout.note p {
+    margin: 0.25rem 0 0 0;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        padding: 2rem;
+    }
+
+    .intro-flex {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .headersep {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 0.5rem;
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin: 2px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #fffcf3;
+        background-color: #222;
+    }
+
+    .callout.note {
+        background: #333;
+        color: #eee;
+    }
+
+    a:link, a:visited {
+        color: #58a6ff;
+    }
+
+    .headersep {
+        color: #666;
+    }
+}
