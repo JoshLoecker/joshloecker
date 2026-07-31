@@ -14,6 +14,8 @@
   <nav>
     <a href="https://github.com/JoshLoecker" target="_blank" rel="noopener noreferrer">GitHub</a>
     <span class="headersep"> | </span>
+    <a href="https://www.linkedin.com/in/joshloecker/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <span class="headersep"> | </span>
     <a href="#projects">Projects</a>
     <span class="headersep"> | </span>
     <a href="assets/Josh-Loecker-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
@@ -27,52 +29,54 @@
     <h1>Welcome to Josh Loecker's Personal Site!</h1>
     <div class="intro-flex">
       <p>
-        My name is Josh Loecker, and I am currently a 5th-year graduate student at the University of Nebraska-Lincoln obtaining a Doctorate in Biochemistry with a Specialization in Bioinformatics. Despite this, I consider myself more of a Software Engineer than biologist. I am skilled in working with and building, high-performance pipelines and solutions, and have a passion for developing robust and maintainable software that is usable by individuals without computational expertise.
+            My name is Josh Loecker, and I am currently a 5th-year graduate student at the University of Nebraska-Lincoln in <a href="https://biochem.unl.edu/person/tomas-helikar/" target="_blank" rel="">Dr. Tomáš Helikar</a>'s Lab. I am obtaining a Doctorate in Biochemistry with a Specialization in Bioinformatics; despite this, I consider myself more of a Software Engineer than biologist. I am skilled in working with and building high-performance pipelines and solutions, and have a passion for developing robust and maintainable software that is usable by individuals without computational expertise.
       </p>
       <img src="assets/profile.png" alt="Josh Loecker" class="profile-img">
     </div>
   </section>
-  
+
+  <!--
   <div class="callout note">
     <strong>Note</strong>
     <p>The 'Project' section is still a work-in-progress.</p>
   </div>
-  
+  -->
+
   <section id="projects">
     <h2>Projects</h2>
     <article>
-      <h3 id="mechainistic">Mech(AI)nistic</h3>
-      <p>Description coming soon!</p>
+          <h3 id="mechainistic">Mech(AI)nistic (<a href="https://doi.org/10.64898/2026.05.11.723319" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">BioRxiv</a>; Manuscript in review)</h3> <!-- (<a href="", target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Preprint</a>)</h3> -->
+          <p><a href="https://en.wikipedia.org/wiki/Metabolic_network_modelling" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Genome-scale metabolic modeling</a> is an incredibly useful tool to understand how diseases work on at a cellular scale, but the technical barrier to entry can be quite high because it requires knowledge in programming and metabolic/mechanistic modeling. To overcome this gap, I, leading several undergraduate students, developed <strong>MechAInistic</strong>. It’s a multi-agent system that uses Large Language Models to turn natural language questions into executable, model-grounded workflows. By using an "Architect-Reviewer" design, the system builds its own analysis pipelines and returns structured reports on everything from drug-target exploration to pathway comparisons. To validate MechAInistic, we tested it against to identify a drug therapy for (1) Naive B cells in a Rheumatoid Arthritis context, and (2) CD4+ Th17 cells in a Multiple Sclerosis context. In the Naive B cells, MechAInistic nominated Devimistat, and for the Th17 cells, it recommended Ivosidenib.</p>
     </article>
-    
+
     <article>
-      <h3 id="como">COMO</h3>
+          <h3 id="como">COMO (<a href="https://doi.org/10.1093/bib/bbad387" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Briefings in Bioinformatics</a>, <a href="https://github.com/HelikarLab/COMO" target="_blank" rel="noopener noreferrer" aria-label="Visit site">GitHub</a>)</h3>
       <p>
-        <a href="https://github.com/HelikarLab/COMO" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Constraint-based Optimization of Metabolic Objectives</a> (COMO, <a href="https://doi.org/10.1093/bib/bbad387" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">DOI</a>) is a comprehensive, user-friendly pipeline designed to streamline the integration of multi-omics data for  genome-scale metabolic modeling (GSMN) and drug discovery. By combining heterogeneous datasets (including bulk and single-cell RNA-seq, microarrays, and proteomics) with GSMNs, COMO allows researchers to efficiently construct context-specific models for various cell and tissue types within a unified Docker or Conda environment. The pipeline automates complex tasks such as data processing, simulation, and drug perturbation analysis to identify potential therapeutic targets and repurposable drugs. COMO was validated through a study on B cell metabolism in rheumatoid arthritis and systemic lupus erythematosus and offers a robust computational solution for accelerating the discovery of low-cost, effective disease treatments.
+        Constraint-based Optimization of Metabolic Objectives (COMO) is a comprehensive, user-friendly pipeline designed to streamline the integration of multi-omics data for  genome-scale metabolic modeling (GSMN) and drug discovery. By combining heterogeneous datasets (including bulk and single-cell RNA-seq, microarrays, and proteomics) with GSMNs, COMO allows researchers to efficiently construct context-specific models for various cell and tissue types within a unified Docker or Conda environment. The pipeline automates complex tasks such as data processing, simulation, and drug perturbation analysis to identify potential therapeutic targets and repurposable drugs. COMO was validated through a study on B cell metabolism in rheumatoid arthritis and systemic lupus erythematosus and offers a robust computational solution for accelerating the discovery of low-cost, effective disease treatments.
       </p>
     </article>
-    
+
     <article>
-      <h3 id="fastqtogenecounts">FastqToGeneCounts</h3>
+          <h3 id="autornaseq">AutoRNAseq (<a href="https://doi.org/10.64898/2026.04.21.719844" target="_blank" rel="noopener noreferrer" aria-label="Visit site">BioRxiv</a>, <a href="https://gitlab.com/unebraska/lagbh-public/autornaseq" target="_blank" rel="noopener noreferrer" aria-label="Visit site">GitLab</a>)</h3>
       <p>
-        <a href="https://github.com/HelikarLab/FastqToGeneCounts" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">FastqToGeneCounts</a> is a highly parallelized Snakemake workflow designed to automate the processing of bulk RNA-seq data on high-performance computing (HPC) clusters. Tailored to interface with NCBI's <a href="https://www.ncbi.nlm.nih.gov/geo/" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Gene Expression Omnibus</a> Database, the pipeline requires only a list of SRR codes as input. It handles parallel downloading and unpacking of raw data, performs quality control (using <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">FastQC</a> and <a href="https://github.com/MultiQC/MultiQC" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">MultiQC</a>), optionally trims reads (<a href="https://github.com/FelixKrueger/TrimGalore" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Trim Galore!</a>), aligns sequences to the genome using <a href="https://github.com/alexdobin/STAR" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">STAR</a> and performs gene quantification with <a href="https://combine-lab.github.io/salmon" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Salmon</a>. While specifically optimized to format inputs for metabolic drug discovery and repurposing packages (specifically <a href="#como">COMO</a>), FastqToGeneCounts serves as a robust, standalone solution for any individual needing to efficiently generate standardized gene count matrices and quality metrics for downstream RNA-seq analysis.
+            AutoRNAseq is a highly parallelized Snakemake workflow designed to automate the processing of bulk RNA-seq data on high-performance computing (HPC) clusters. Tailored to interface with NCBI's <a href="https://www.ncbi.nlm.nih.gov/geo/" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Gene Expression Omnibus</a> Database, the pipeline requires only a list of SRR codes as input. It handles parallel downloading and unpacking of raw data, performs quality control (using <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">FastQC</a> and <a href="https://github.com/MultiQC/MultiQC" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">MultiQC</a>), optionally trims reads (<a href="https://github.com/FelixKrueger/TrimGalore" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Trim Galore!</a>), aligns sequences to the genome using <a href="https://github.com/alexdobin/STAR" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">STAR</a> and performs gene quantification with <a href="https://combine-lab.github.io/salmon" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Salmon</a>. While specifically optimized to format inputs for metabolic drug discovery and repurposing packages (specifically <a href="#como">COMO</a>), AutoRNAseq serves as a robust, standalone solution for any individual needing to efficiently generate standardized gene count matrices and quality metrics for downstream RNA-seq analysis.
       </p>
     </article>
   </section>
-  
+
   <section id="hobbies">
     <h2>Hobbies</h2>
     <h3>Home Lab</h3>
     <p>I have a home-server (running this site!) that I enjoy using for various tech-related experiments. Some of my current favorites are:</p>
     <ul class="hobby-list">
       <li><a href="http://tailscale.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Tailscale</a> for easy, VPN-based access to private services</li>
-      <li><a href="https://github.com/linkwarden/linkwarden" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">LinkWarden</a> for a private "read later" list of links</li>
+      <li><a href="https://github.com/linkwarden/linkwarden" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">LinkWarden</a> for a "read later" list of links</li>
       <li><a href="https://docs.paperless-ngx.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Paperless NGX</a> for document scanning and OCR searching</li>
       <li><a href="https://www.home-assistant.io/" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Home Assistant</a> for interacting with smart lights, switches, etc.</li>
-      <li><a href="https://openwebui.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Open Web UI</a> + <a href="https://ollama.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Ollama</a> gives private LLM usage, specifically through Tailscale, for easy and secure access anywhere in the world</li>
+      <li><a href="https://openwebui.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Open Web UI</a> + <a href="https://github.com/mostlygeek/llama-swap" target="_blank" rel="noopener noreferrer" aria-label="Visit site (opens in a new tab)">Llama-Swap</a> gives private LLM usage, specifically through Tailscale, for easy and secure access anywhere in the world</li>
     </ul>
   </section>
-  
+
   <footer id="about-website">
     <hr>
     <h2>About this Website</h2>
@@ -80,7 +84,7 @@
       I built this page using pure HTML + CSS (no frameworks needed!), inspired by the websites of <a href="https://gvanrossum.github.io/" target="_blank" rel="noopener noreferrer">Guido van Rossum</a> (the creator of <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank" rel="noopener noreferrer">Python</a>) and <a href="https://www.stroustrup.com/" target="_blank" rel="noopener noreferrer">Bjarne Stroustrup</a> (the creator of <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank" rel="noopener noreferrer">C++</a>). The entire content of this website  is contained in two main files: <code>index.html</code> and <code>style.css</code>.
     </p>
     <p><i>Technically</i>, there are also <code>profile.png</code> and <code>favicon.webp</code> files, but they're not strictly necessary :)</p>
-    
+
     <p>This approach mirrors my passion for fast, maintainable software:</p>
     <ul>
       <li>Effectively zero dependencies (just a basic web server running <a href="https://caddyserver.com/" target="_blank" rel="noopener noreferrer">Caddy</a>)</li>
