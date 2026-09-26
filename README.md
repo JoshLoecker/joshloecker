@@ -1,6 +1,6 @@
 # Josh Loecker
 
-I specialize in high-performance data pipelines, bioinformatics workflows, constraint-based metabolic modeling, and applying LLM/AI workflows. I am currently a doctoral candidate at the University of Nebraska-Lincoln.
+I am currently a Postdoctoral research associate at the University of Nebraska-Lincoln. I specialize in high-performance data pipelines, bioinformatics workflows, constraint-based metabolic modeling, and applying LLM/AI workflows.
 
 ## Personal Website
 
