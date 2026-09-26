@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dissertation | Josh Loecker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.webp" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="https://joshloecker.com">Home</a>
+        <span class="headersep"> | </span>
+        <a href="https://joshloecker.com/#projects">Projects</a>
+        <span class="headersep"> | </span>
+        <a href="assets/Josh-Loecker-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <span class="headersep"> | </span>
+        <a href="dissertation.html">Dissertation</a>
+        <span class="headersep"> | </span>
+        <a href="https://joshloecker.com/#about-website">About</a>
+        <br />
+        <a href="https://github.com/JoshLoecker" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span class="headersep"> | </span>
+        <a href="https://www.linkedin.com/in/joshloecker/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="dissertation-main">
+        <header class="dissertation-header">
+          <h1>Doctoral Dissertation</h1>
+          <p>
+            <em>University of Nebraska-Lincoln</em>
+          </p>
+          <p>
+            <a href="assets/Josh-Loecker-Dissertation.pdf" class="btn-download" target="_blank">Download PDF</a>
+          </p>
+        </header>
+
+        <div id="pdf-viewer" class="pdf-container">
+          <iframe
+            src="assets/Josh-Loecker-Dissertation.pdf"
+            type="application/pdf"
+            width="100%"
+            height="800px"
+            frameborder="0"
+          >
+            Your browser does not support PDFs.
+          </iframe>
+        </div>
+      </section>
+      <section id="abstract">
+        <h2>Abstract</h2>
+        <p style="line-height: 1.5; text-align: justify">
+          Cellular metabolism is reshaped by disease and physiological state, and genome-scale metabolic networks
+          (GSMNs) offer a systematic way to interrogate this biology and identify therapeutic targets. Building a GSMN
+          from expression data, however, requires a sequence of stages including read processing, normalization and
+          gene-activity classification, multi-omic integration, model reconstruction, simulation, and biological
+          interpretation. These are typically handled by disconnected tools spanning multiple programming languages,
+          file formats, and databases. The resulting reliance on heterogeneous interfaces and manual steps threatens
+          reproducibility. This work develops an ecosystem of computational tools that carry an analysis from raw
+          sequencing reads to mechanistic biological interpretation. First, AutoRNAseq, a Snakemake-based bulk RNA-seq
+          pipeline, alleviates manual, error-prone alignment pipelines by unifying data acquisition, reference genome
+          preparation, quality control, alignment, and quantification. It was validated against a widely used reference
+          pipeline (Pearson correlation > 98%). COMO consumes these outputs and integrates multi-omic processing,
+          context-specific reconstruction, and drug-repurposing analysis in one workflow, only requiring parameter
+          configuration. COMO was used to reconstruct B-cell metabolism in two disease contexts, and nominated ranked
+          metabolic drug targets, several supported by clinical use or independent literature. A Python reimplementation
+          of the R-based zFPKM gene-activity normalization method reproduced the original classifications (with Pearson
+          and Spearman correlations both 1.00). Utilizing COMO at scale, a study of immune aging reconstructed 5,705
+          donor- and cell-type-specific models from a single-cell atlas of two million cells across 166 donors (aged
+          25-85), finding that age-associated metabolic signal concentrates in a small set of pathways and cell types,
+          and shifts in a cell-type-dependent direction rather than uniformly. Lastly, MechAInistic, a tool-grounded,
+          Architect-Reviewer large-language-model system, translates natural-language questions into executable,
+          GSMN-oriented workflows that produce literature-supported hypotheses, outperforming general-purpose frontier
+          models in grounding and task completion; MechAInistic provides an easy-to-use web interface and generates a
+          literature-backed report, eliminating the need to program analysis pipelines. Together, these projects
+          provides a reproducible, end-to-end ecosystem for expression-driven metabolic modeling, with each project
+          solving a specific problem while reducing, or eliminating, the need for researchers to write code.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
