@@ -1,5 +1,6 @@
 :root {
-    --bg-color: #ffffff;
+    /*--bg-color: #ffffff;*/
+    --bg-color: #FDFBF7;
     --text-color: #444444;
     --link-color: #0969da;
     --note-bg: #e0e6ec;
@@ -59,6 +60,8 @@ h1, h2, h3 {
 }
 
 p {
+    line-height: 1.5;
+    text-align: justify;
     margin-bottom: 1rem;
 }
 
@@ -93,7 +96,7 @@ nav {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10%;
     border: 2px solid var(--profile-border);
 }
 
